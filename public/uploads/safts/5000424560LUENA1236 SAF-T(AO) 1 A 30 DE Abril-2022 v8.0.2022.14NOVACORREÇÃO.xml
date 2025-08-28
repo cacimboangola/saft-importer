@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuditFile xmlns="urn:OECD:StandardAuditFile-Tax:AO_1.01_01">
+<Header>
+<AuditFileVersion>1.01_01</AuditFileVersion>
+<CompanyID>5000424560</CompanyID>
+<TaxRegistrationNumber>5000424560</TaxRegistrationNumber>
+<TaxAccountingBasis>F</TaxAccountingBasis>
+<CompanyName>ANGO SORTE - COMERCIO E PRESTA?AO DE SERVI?OS, LDA.</CompanyName>
+<CompanyAddress>
+<AddressDetail>Luena-Moxico</AddressDetail>
+<City>LUENA</City>
+<PostalCode>244</PostalCode>
+<Country>AO</Country>
+</CompanyAddress>
+<FiscalYear>2022</FiscalYear>
+<StartDate>2022-04-01</StartDate>
+<EndDate>2022-04-30</EndDate>
+<CurrencyCode>AOA</CurrencyCode>
+<DateCreated>2022-05-30</DateCreated>
+<TaxEntity>Global</TaxEntity>
+<ProductCompanyTaxID>5417167444</ProductCompanyTaxID>
+<SoftwareValidationNumber>61/AGT/2019</SoftwareValidationNumber>
+<ProductID>Cacimbo ERP/CACIMBO - ANGOLAN SOFTWARE FACTORY, LDA</ProductID>
+<ProductVersion>8</ProductVersion>
+<Telephone>00244930120003</Telephone>
+<Fax>00244930120002</Fax>
+<Email>apoioaocliente@cacimboerp.com</Email>
+<Website>www.cacimboangola.com</Website>
+</Header>
+<MasterFiles>
+
+<Customer>
+<CustomerID>1003</CustomerID>
+<AccountID>1003</AccountID>
+<CustomerTaxID>7141005439</CustomerTaxID>
+<CompanyName>ADMINISTRACAO DO LUACANO</CompanyName>
+<Contact>ADMINISTRACAO DO LUACANO</Contact>
+<BillingAddress>
+<AddressDetail>Luena-Moxico</AddressDetail>
+<City>MOXICO</City>
+<PostalCode/>
+<Country>AO</Country>
+</BillingAddress>
+<ShipToAddress>
+<AddressDetail>Luena-Moxico</AddressDetail>
+<City>MOXICO</City>
+<Country>AO</Country>
+</ShipToAddress>
+<Telephone/>
+<Fax/>
+<Email/>
+<SelfBillingIndicator>0</SelfBillingIndicator>
+</Customer>
+<Product>
+<ProductType>P</ProductType>
+<ProductCode>1000005</ProductCode>
+<ProductGroup>N/A</ProductGroup>
+<ProductDescription>PAGAMENTO DE ADENDA DE CONTRATO PARA O REEQUILIBRIO ECONOMICO E FINANCEIRO DE OBRAS PUBLICAS PARA CONSTRUCAO DE UMA ESCOLA T7 NA VILA DO LUACANO,BAIRRO THOPI</ProductDescription>
+<ProductNumberCode>1000005</ProductNumberCode>
+</Product>
+<Product>
+<ProductType>P</ProductType>
+<ProductCode>1000006</ProductCode>
+<ProductGroup>N/A</ProductGroup>
+<ProductDescription>PAGAMENTO 29.27% DO VALOR TOTAL DO PROJECTO</ProductDescription>
+<ProductNumberCode>1000006</ProductNumberCode>
+</Product>
+<Product>
+<ProductType>O</ProductType>
+<ProductCode>LINHA_DOC</ProductCode>
+<ProductGroup>N/A</ProductGroup>
+<ProductDescription>LINHA_DOC</ProductDescription>
+<ProductNumberCode>LINHA_DOC</ProductNumberCode>
+</Product>
+<TaxTable>
+<TaxTableEntry>
+    <TaxType>IVA</TaxType>
+    <TaxCountryRegion>AO</TaxCountryRegion>
+    <TaxCode>OUT</TaxCode>
+    <Description>Regime Transitorio</Description>
+    <TaxPercentage>0.00</TaxPercentage>
+</TaxTableEntry>
+<TaxTableEntry>
+    <TaxType>IVA</TaxType>
+    <TaxCountryRegion>AO</TaxCountryRegion>
+    <TaxCode>NOR</TaxCode>
+    <Description>Taxa normal</Description>
+    <TaxPercentage>14.00</TaxPercentage>
+</TaxTableEntry>
+</TaxTable>
+</MasterFiles>
+<SourceDocuments>
+<SalesInvoices>
+<NumberOfEntries>3</NumberOfEntries>
+<TotalDebit>0.00</TotalDebit>
+<TotalCredit>74791119.20</TotalCredit>
+<Invoice>
+<InvoiceNo>FA FA12022/5</InvoiceNo>
+<DocumentStatus>
+<InvoiceStatus>N</InvoiceStatus>
+<InvoiceStatusDate>2022-05-02T23:18:42</InvoiceStatusDate>
+<Reason/>
+<SourceID>Liu Xiaoling</SourceID>
+<SourceBilling>P</SourceBilling>
+</DocumentStatus>
+<HASH>wnqJpuHHpH+i9paQiwIkgKgjAXZMu5puTE6zdr5YYcv1idNIS1ZoYM8a+VdPTNpri+SWTvy4zyHzPysG/1VBNhmCVFtcwGivHuyYhCetx+CscY4Cex0PoDUw7vsS+gBg+irr7kdpVM9RvEWSE2Golu52DwIniOQkAWqFJuPnVyg=</HASH>
+<HashControl>1</HashControl>
+<Period>4</Period>
+<InvoiceDate>2022-04-05</InvoiceDate>
+<InvoiceType>FT</InvoiceType>
+<SpecialRegimes>
+  <SelfBillingIndicator>0</SelfBillingIndicator>
+  <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+  <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+</SpecialRegimes>
+<SourceID>Liu Xiaoling</SourceID>
+<SystemEntryDate>2022-04-05T15:34:32</SystemEntryDate>
+<CustomerID>1003</CustomerID>
+<ShipTo>
+<Address>
+<AddressDetail>Morada do Cliente</AddressDetail>
+<City>MOXICO</City>
+<Country>0</Country>
+</Address>
+</ShipTo>
+<ShipFrom>
+  <Address>
+  <AddressDetail>Luena-Moxico</AddressDetail>
+  <City>MOXICO</City>
+  <Country>0</Country>
+</Address>
+</ShipFrom>
+<Line>
+<LineNumber>1</LineNumber>
+
+<ProductCode>1000005</ProductCode>
+<ProductDescription>PAGAMENTO DE ADENDA DE CONTRATO PARA O REEQUILIBRIO ECONOMICO E FINANCEIRO DE OBRAS PUBLICAS PARA CONSTRUCAO DE UMA ESCOLA T7 NA VILA DO LUACANO,BAIRRO THOPI</ProductDescription>
+<Quantity>1.00</Quantity>
+<UnitOfMeasure>UN</UnitOfMeasure>
+<UnitPrice>39074860.00</UnitPrice>
+<TaxPointDate>2022-04-05</TaxPointDate>
+
+<Description>PAGAMENTO DE ADENDA DE CONTRATO PARA O REEQUILIBRIO ECONOMICO E FINANCEIRO DE OBRAS PUBLICAS PARA CONSTRUCAO DE UMA ESCOLA T7 NA VILA DO LUACANO,BAIRRO THOPI</Description>
+<CreditAmount>39074860.00</CreditAmount>
+<Tax>
+  <TaxType>IVA</TaxType>
+  <TaxCountryRegion>AO</TaxCountryRegion> 
+  <TaxCode>NOR</TaxCode>
+  <TaxPercentage>14.00</TaxPercentage>
+</Tax>
+<SettlementAmount>0.00</SettlementAmount>
+</Line>
+<DocumentTotals>
+  <TaxPayable>5470480.40</TaxPayable>
+  <NetTotal>39074860.00</NetTotal>
+  <GrossTotal>44545340.40</GrossTotal>
+</DocumentTotals>
+<WithholdingTax>
+	<WithholdingTaxType>IRT</WithholdingTaxType>
+	<WithholdingTaxDescription>Imposto sobre o rendimento de trabalho</WithholdingTaxDescription>
+	<WithholdingTaxAmount>4102860.30</WithholdingTaxAmount>
+</WithholdingTax>
+</Invoice>
+<Invoice>
+<InvoiceNo>FA FA12022/6</InvoiceNo>
+<DocumentStatus>
+<InvoiceStatus>A</InvoiceStatus>
+<InvoiceStatusDate>2022-04-19T12:18:05</InvoiceStatusDate>
+<Reason/>
+<SourceID>Liu Xiaoling</SourceID>
+<SourceBilling>P</SourceBilling>
+</DocumentStatus>
+<HASH>AfRw7K+YoziTmDInlQFJBJAQnUIC4Vly//i6BuXvXUCumi0MKllhbN5HUJ4pcijB8lgganBJ/UVF3cRFSOf4DZUAn9MG0aBUyyfLzZoD9y2Ns55aOP7wNkgB32P25vACIzBhpfU9h3+9DggGQs05Mx4AIWECxpuFpcYe2QB5qTY=</HASH>
+<HashControl>1</HashControl>
+<Period>4</Period>
+<InvoiceDate>2022-04-19</InvoiceDate>
+<InvoiceType>FT</InvoiceType>
+<SpecialRegimes>
+  <SelfBillingIndicator>0</SelfBillingIndicator>
+  <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+  <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+</SpecialRegimes>
+<SourceID>Liu Xiaoling</SourceID>
+<SystemEntryDate>2022-04-19T12:14:21</SystemEntryDate>
+<CustomerID>1003</CustomerID>
+<ShipTo>
+<Address>
+<AddressDetail>Morada do Cliente</AddressDetail>
+<City>MOXICO</City>
+<Country>0</Country>
+</Address>
+</ShipTo>
+<ShipFrom>
+  <Address>
+  <AddressDetail>Luena-Moxico</AddressDetail>
+  <City>MOXICO</City>
+  <Country>0</Country>
+</Address>
+</ShipFrom>
+<Line>
+<LineNumber>1</LineNumber>
+
+<ProductCode>1000006</ProductCode>
+<ProductDescription>PAGAMENTO 29.27% DO VALOR TOTAL DO PROJECTO</ProductDescription>
+<Quantity>1.00</Quantity>
+<UnitOfMeasure>UN</UnitOfMeasure>
+<UnitPrice>35716259.20</UnitPrice>
+<TaxPointDate>2022-04-19</TaxPointDate>
+
+<Description>PAGAMENTO 29.27% DO VALOR TOTAL DO PROJECTO</Description>
+<CreditAmount>35716259.20</CreditAmount>
+<Tax>
+  <TaxType>IVA</TaxType>
+  <TaxCountryRegion>AO</TaxCountryRegion> 
+  <TaxCode>NOR</TaxCode>
+  <TaxPercentage>14.00</TaxPercentage>
+</Tax>
+<SettlementAmount>0.00</SettlementAmount>
+</Line>
+<DocumentTotals>
+  <TaxPayable>5000276.29</TaxPayable>
+  <NetTotal>35716259.20</NetTotal>
+  <GrossTotal>40716535.49</GrossTotal>
+</DocumentTotals>
+</Invoice>
+<Invoice>
+<InvoiceNo>FA FA12022/7</InvoiceNo>
+<DocumentStatus>
+<InvoiceStatus>N</InvoiceStatus>
+<InvoiceStatusDate>2022-05-02T23:18:08</InvoiceStatusDate>
+<Reason/>
+<SourceID>Liu Xiaoling</SourceID>
+<SourceBilling>P</SourceBilling>
+</DocumentStatus>
+<HASH>TSxIJrE8z7cU2EuFluA3mEC8YnTtEYcBVA6Y12L6D9MPHVlhYerphuQlT7NBlzg3vp1O9rc6I6bNbnA7OkgHDDkmLjQ597JJSc3MdyW5rZXdiFVg7fRQr1G5BA/tG9XXb0Gviwy0/nZWvrIUJPVchqyCng3X+cje9BQ6cbNJYI0=</HASH>
+<HashControl>1</HashControl>
+<Period>4</Period>
+<InvoiceDate>2022-04-19</InvoiceDate>
+<InvoiceType>FT</InvoiceType>
+<SpecialRegimes>
+  <SelfBillingIndicator>0</SelfBillingIndicator>
+  <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+  <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+</SpecialRegimes>
+<SourceID>Liu Xiaoling</SourceID>
+<SystemEntryDate>2022-04-19T12:27:36</SystemEntryDate>
+<CustomerID>1003</CustomerID>
+<ShipTo>
+<Address>
+<AddressDetail>Morada do Cliente</AddressDetail>
+<City>MOXICO</City>
+<Country>0</Country>
+</Address>
+</ShipTo>
+<ShipFrom>
+  <Address>
+  <AddressDetail>Luena-Moxico</AddressDetail>
+  <City>MOXICO</City>
+  <Country>0</Country>
+</Address>
+</ShipFrom>
+<Line>
+<LineNumber>1</LineNumber>
+
+<ProductCode>1000006</ProductCode>
+<ProductDescription>PAGAMENTO 29.27% DO VALOR TOTAL DO PROJECTO</ProductDescription>
+<Quantity>1.00</Quantity>
+<UnitOfMeasure>UN</UnitOfMeasure>
+<UnitPrice>35716259.20</UnitPrice>
+<TaxPointDate>2022-04-19</TaxPointDate>
+
+<Description>PAGAMENTO 29.27% DO VALOR TOTAL DO PROJETO PARA CONSTRUCAO DE UMA ESCOLA T7 NA VILA DO LUACANO, BAIRRO THOPI</Description>
+<CreditAmount>35716259.20</CreditAmount>
+<Tax>
+  <TaxType>IVA</TaxType>
+  <TaxCountryRegion>AO</TaxCountryRegion> 
+  <TaxCode>NOR</TaxCode>
+  <TaxPercentage>14.00</TaxPercentage>
+</Tax>
+<SettlementAmount>0.00</SettlementAmount>
+</Line>
+<DocumentTotals>
+  <TaxPayable>5000276.29</TaxPayable>
+  <NetTotal>35716259.20</NetTotal>
+  <GrossTotal>40716535.49</GrossTotal>
+</DocumentTotals>
+</Invoice>
+</SalesInvoices>
+</SourceDocuments>
+</AuditFile>
+
