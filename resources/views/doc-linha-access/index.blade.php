@@ -146,7 +146,7 @@
                 }
             });
 
-            fetch("{{ route('doc-linha-access.search') }}", {
+            fetch("/doc-linha-access/search", {
                 method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': '{{ csrf_token() }}',
@@ -228,7 +228,7 @@
                 Swal.fire({
                     icon: 'error',
                     title: 'Erro',
-                    text: 'Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente.'
+                    text: 'Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.'
                 });
                 console.error('Error:', error);
             });
