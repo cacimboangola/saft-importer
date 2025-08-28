@@ -1,4 +1,4 @@
-@extends('layouts.app')
+search@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -146,7 +146,7 @@
                 }
             });
 
-            fetch("{{ route('doc-linha-access.search') }}", {
+            fetch("/doc-linha-access/search", {
                 method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': '{{ csrf_token() }}',
