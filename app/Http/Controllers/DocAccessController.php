@@ -17,7 +17,7 @@ class DocAccessController extends Controller
     public function index()
     {
         // Buscar todas as empresas para o dropdown
-        $empresas = DB::table('doc_empresas')->select('CompanyID', 'CompanyName')->orderBy('CompanyName', 'asc')->get();
+        $empresas = DB::table('doc_empresas')->select('CompanyID', 'CompanyName')->where('CompanyID', '=', '5601020116-999')->orderBy('CompanyName', 'asc')->get();
 
         return view('doc-access.index', compact('empresas'));
     }
@@ -145,21 +145,23 @@ class DocAccessController extends Controller
 
         // Instanciar o controlador DocLinhaAccessController
         $docLinhaController = new DocLinhaAccessController();
-        
+
         $allFacturasSql = [];
         $allLinhasSql = [];
         $processedCount = 0;
         $skippedCount = 0;
-        $accessFacturaId = 1; // ID inicial para as faturas no Access
+        $accessFacturaId = 1;  // ID inicial para as faturas no Access
 
         foreach ($docs as $doc) {
             try {
                 // Buscar as linhas do documento
                 $docLinhas = DocLinha::where('InvoiceId', $doc->InvoiceId)
                     ->where(function ($query) {
-                        $query->where('CreditAmount', '>', 0)
+                        $query
+                            ->where('CreditAmount', '>', 0)
                             ->orWhere('DebitAmount', '>', 0);
-                    })->get();
+                    })
+                    ->get();
 
                 if ($docLinhas->isEmpty()) {
                     $skippedCount++;
@@ -175,7 +177,7 @@ class DocAccessController extends Controller
                 $allLinhasSql[] = "-- LINHAS DA FATURA: {$doc->InvoiceNo} - Access ID: {$accessFacturaId}\n" . implode("\n", $linhasSql);
 
                 $processedCount++;
-                $accessFacturaId++; // Incrementar para a próxima fatura
+                $accessFacturaId++;  // Incrementar para a próxima fatura
             } catch (\Exception $e) {
                 $skippedCount++;
                 continue;
@@ -222,20 +224,24 @@ class DocAccessController extends Controller
         $doc = Docs::where('InvoiceId', $invoiceId)->first();
 
         if (!$doc) {
-            return redirect()->route('doc-access.index')
+            return redirect()
+                ->route('doc-access.index')
                 ->with('error', 'Documento não encontrado com o ID ' . $invoiceId);
         }
 
         // Buscar as linhas do documento
         $docLinhas = DocLinha::where('InvoiceId', $doc->InvoiceId)
-        ->where(function ($query)  {
-            $query->where('CreditAmount', '>', 0)
-                ->orWhere('DebitAmount', '>', 0);
-        })->get();
-        //dd($docLinhas);
+            ->where(function ($query) {
+                $query
+                    ->where('CreditAmount', '>', 0)
+                    ->orWhere('DebitAmount', '>', 0);
+            })
+            ->get();
+        // dd($docLinhas);
 
         if ($docLinhas->isEmpty()) {
-            return redirect()->route('doc-access.index')
+            return redirect()
+                ->route('doc-access.index')
                 ->with('error', 'Nenhuma linha encontrada para o documento ' . $invoiceId);
         }
 
@@ -247,7 +253,7 @@ class DocAccessController extends Controller
 
         // Gerar o SQL para inserção no Access usando o método do controlador DocLinhaAccessController
         $sqlStatements = $docLinhaController->generateAccessSql($doc, $docLinhas, $accessFacturaId);
-        
+
         // Gerar o SQL para inserção da fatura no Access
         $facturaSql = $docLinhaController->generateFacturaAccessSql($doc, $accessFacturaId);
 
