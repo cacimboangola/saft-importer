@@ -146,7 +146,7 @@ search@extends('layouts.app')
                 }
             });
 
-            fetch("/doc-linha-access/search", {
+            fetch("{{ route('doc-linha-access.search') }}", {
                 method: 'POST',
                 headers: {
                     'X-CSRF-TOKEN': '{{ csrf_token() }}',
